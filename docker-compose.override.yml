@@ -1,0 +1,3 @@
+services:
+    docusaurus:
+        container_name: example_docusaurus
