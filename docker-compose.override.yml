@@ -1,3 +1,3 @@
 services:
     docusaurus:
-        container_name: example_docusaurus
+        container_name: sacbernina_docusaurus

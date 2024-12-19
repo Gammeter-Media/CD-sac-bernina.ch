@@ -4,12 +4,12 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: "Docusaurus",
-    tagline: "Dinosaurs are cool",
+    title: "CD SAC Bernina",
+    tagline: "Corporate Design SAC Bernina",
     favicon: "img/favicon.ico",
 
     // Set the production url of your site here
-    url: "https://your-docusaurus-site.example.com",
+    url: "https://gammeter-media.github.io/CD-sac-bernina.ch/",
     // Set the /<baseUrl>/ pathname under which your site is served
     // For GitHub pages deployment, it is often '/<projectName>/'
     baseUrl: "/",
@@ -17,7 +17,7 @@ const config = {
     // GitHub pages deployment config.
     // If you aren't using GitHub pages, you don't need these.
     organizationName: "gammeter-media", // Usually your GitHub org/user name.
-    projectName: "docusaurus", // Usually your repo name.
+    projectName: "CD-sac-bernina.ch", // Usually your repo name.
 
     onBrokenLinks: "throw",
     onBrokenMarkdownLinks: "warn",
@@ -66,7 +66,7 @@ const config = {
       // Replace with your project's social card
       image: "img/docusaurus-social-card.jpg",
       navbar: {
-        title: "Docusaurus",
+        title: "SAC Bernina",
         logo: {
           alt: "Logo",
           src: "img/logo.png",
