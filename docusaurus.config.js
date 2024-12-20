@@ -64,7 +64,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: "img/docusaurus-social-card.jpg",
+      // image: "img/docusaurus-social-card.jpg",
       navbar: {
         title: "SAC Bernina",
         logo: {
@@ -76,7 +76,7 @@ const config = {
             type: "docSidebar",
             sidebarId: "tutorialSidebar",
             position: "left",
-            label: "Docs",
+            label: "Corporate Design",
           },
           // {to: '/blog', label: 'Blog', position: 'left'},
           // {
@@ -129,7 +129,7 @@ const config = {
         //     ],
         //   },
         // ],
-        copyright: `Copyright © ${new Date().getFullYear()} Gammeter Media AG. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} SAC Bernina & Gammeter Media AG`,
       },
       prism: {
             theme: prismThemes.github,
