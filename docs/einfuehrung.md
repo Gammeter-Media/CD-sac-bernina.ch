@@ -6,9 +6,17 @@ sidebar_position: 1
 
 # Einführung
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+## Corporate Design Manual
+Willkommen im digitalen [Corporate Design Manual](/category/corporate-design) der Sektion Bernina des Schweizer Alpen-Clubs SAC. Dieses Dokument dient als Leitfaden für die visuelle und sprachliche Kommunikation der Sektion Bernina und soll sicherstellen, dass alle Kommunikationsmittel einheitlich und professionell gestaltet sind.
 
-Basierend auf [Vorlage SAC Zentralverband](./1-cd-manual/assets/Zentralverband.pdf)
+Zudem sind zahlreiche [Vorlagen und Ressourcen](./1-cd-manual/vorlagen.mdx) enthalten, die es den Funktionären der Sektion Bernina erleichtern, die Corporate-Design-Richtlinien in ihrer täglichen Arbeit umzusetzen.
+
+Die Anweisungen basierend auf der [Vorlage des SAC-Zentralverbands](./1-cd-manual/assets/Zentralverband.pdf)
+
+## weiteres
+Anweisungen für [Social-Media](/category/social-media) und [il Bernina](/category/il-bernina) sind in Arbeit.
+
+
 
 ## Changelog
 

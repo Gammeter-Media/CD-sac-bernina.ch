@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Beispiel
+# in Arbeit...
 
 Gestalterische Richtlinien und Spezifikationen für das SAC-Bernina Mitgliedermagazin «il Bernina». Diese Anweisungen garantieren ein einheitliches Erscheinungsbild des Magazins.
 
