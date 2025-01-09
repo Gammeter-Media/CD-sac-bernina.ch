@@ -21,10 +21,19 @@ const ColorBoxes = ({ web, className, RGB,  pantone, cmyk}) => {
     
 
 // ColorContainer component
-const addClass = ({ className, children }) => {
+const addClass = ({ className}) => {
     return (
         <div className={className}>
-            {children}
+        </div>
+    );
+};
+
+// Schmuckfarben
+const Schmuckfarben = ({ className, color}) => {
+    return (
+        <div className={className} style={{backgroundColor: color}}>
+            <div className="schmukfarben-top"></div>
+            {color}
         </div>
     );
 };
@@ -33,7 +42,7 @@ const addClass = ({ className, children }) => {
 
 
 // Export components
-export { ColorBoxes, addClass }; // Named exports
+export { ColorBoxes, addClass, Schmuckfarben }; // Named exports
 
 // Optionally, you can set one as the default export if needed
 export default ColorBoxes;

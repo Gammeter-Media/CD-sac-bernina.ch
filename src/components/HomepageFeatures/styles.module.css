@@ -10,6 +10,9 @@
     width: 200px;
 }
 
+
+
+/* Farbwelt */
 .Logofarben {
     padding: 2px;
     display: flex;
@@ -56,5 +59,39 @@
 
     .TextAndBoxContainer {
         flex-direction: column;
+    }
+}
+
+
+
+/* schmukfarben */
+
+
+.Schmuckfarbencontainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Schmuckfarben {
+    width: 30%;
+    border-radius: 25px;
+    padding: 50px;
+    margin: 10px;
+    display: flex; 
+}
+
+
+@media (max-width: 1350px ) {
+    .Schmuckfarben {
+    width: 45%;
+        
+    }
+}
+@media (max-width: 799px ) {
+
+
+    .Schmuckfarben {
+    width: 100%;
+        
     }
 }
