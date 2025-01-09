@@ -1,17 +1,18 @@
 import React from 'react';
-import styles from '@site/src/components/HomepageFeatures/styles.module.css';
+import '@site/src/css/Farbwelt.css';
+
+
 
 
 // Primary component
-const ColorBoxes = ({ web, RGB, pantone, cmyk }) => {
+const ColorBoxes = ({ web, RGB, pantone, cmyk , textcolor}) => {
     return (
-        <div className={styles.logofarben}>
-            <span>pantone: {pantone}</span>
-            <span>cmyk: {cmyk}</span>
-            <span>web: {web}</span>
-            <span>rgb: {RGB}</span>
-
-            <div style={{ backgroundColor: web, width: "100%", height: "100%" }}>
+        <div className="logofarben">        
+            <div style={{ backgroundColor: web, width: "100%", height: "100%",  color: textcolor}}>
+                <span>pantone: {pantone}</span>
+                <span>cmyk: {cmyk}</span>
+                <span>web: {web}</span>
+                <span>rgb: {RGB}</span>
             </div>
         </div>
 
@@ -29,8 +30,8 @@ const AddClass = ({ className }) => {
 
 const Schmuckfarben = ({ Primary, primarycmyk, secondary, secondarycmyk }) => {
     return (
-        <div className={styles.schmuckfarben} style={{ backgroundColor: Primary }}>
-            <div className={styles.schmukfarbenTop} style={{ backgroundColor: secondary }}>
+        <div className="schmuckfarben" style={{ backgroundColor: Primary }}>
+            <div className="schmukfarbenTop" style={{ backgroundColor: secondary }}>
                 <div>
                     <span>CMYK: {secondarycmyk}</span>
                     <span>RGB: {secondary}</span>
