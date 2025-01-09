@@ -1,0 +1,109 @@
+/* Farbwelt */
+.logofarben {
+    flex-direction: column;
+    width: 23%;
+    height: 500px;
+}
+
+.logofarben div{
+    border-radius: 25px 0;
+    padding: 10px;
+}
+
+
+.logofarben span {
+    font-size: small;
+    display: block;
+    padding-left: 5px;
+    font-weight: 200;
+}
+
+.primaryClores {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+/* schmukfarben */
+.schmuckfarbencontainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.schmuckfarben {
+    width: 30%;
+    border-radius: 25px;
+    padding: 75px;
+    margin: 10px;
+    display: flex;
+    position: relative;
+}
+
+.schmukfarbenTop {
+    width: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    border-radius: 25px 0;
+    background-color: inherit;
+}
+
+.schmuckfarben span {
+    font-size: small;
+    display: block;
+    font-weight: 200;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.schmuckfarben span:nth-last-of-type(1) {
+    margin-top: 0px;
+}
+
+
+.schmuckfarben div:nth-last-of-type(1) {
+    position: absolute;
+    left: 5px;
+
+}
+
+
+
+
+
+/* media querys */
+@media (max-width: 1350px) {
+    .schmuckfarben {
+        width: 45%;
+    }
+    
+    .logofarben {
+        width: 47%;
+        margin-bottom: 40px;
+    }
+
+    .primaryClores {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 799px) {
+    .schmuckfarben {
+        width: 100%;
+    }
+
+    .logofarben {
+        width: 100%;
+        margin-bottom: 40px;
+        height: 100px;
+    }
+
+    .primaryClores {
+        flex-wrap: wrap;
+    }
+}
+
+
