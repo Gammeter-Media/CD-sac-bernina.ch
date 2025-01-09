@@ -15,11 +15,8 @@ const ColorBoxes = ({ web, RGB, pantone, cmyk , textcolor}) => {
                 <span>rgb: {RGB}</span>
             </div>
         </div>
-
     )
 };
-
-
 
 // ColorContainer component
 const AddClass = ({ className }) => {
