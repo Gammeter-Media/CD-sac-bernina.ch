@@ -1,9 +1,11 @@
 import React from 'react';
+import styles from '@site/src/components/HomepageFeatures/styles.module.css';
+
 
 // Primary component
 const ColorBoxes = ({ web, className, RGB,  pantone, cmyk}) => {
     return (
-    <div className={className}>
+    <div className={styles.Logofarben}>
         <span>pantone: {pantone}</span>
         <span>cmyk: {cmyk}</span>       
         <span>web: {web}</span>       
@@ -31,9 +33,9 @@ const addClass = ({ className}) => {
 // Schmuckfarben
 const Schmuckfarben = ({ className, color}) => {
     return (
-        <div className={className} style={{backgroundColor: color}}>
-            <div className="schmukfarben-top"></div>
-            {color}
+        <div className={styles.Schmuckfarben} style={{backgroundColor: color}}>
+            <div className={styles.schmukfarbenTop}>
+            </div>
         </div>
     );
 };

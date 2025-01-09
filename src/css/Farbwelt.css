@@ -1,3 +1,4 @@
+/* Farbwelt */
 .Logofarben {
     padding: 2px;
     display: flex;
@@ -29,4 +30,63 @@
 
 .TextBoxColors {
     width: 25%;
+}
+
+@media (max-width: 1350px ) {
+
+
+    .PrimaryClores {
+        width: 100%;
+    }
+
+    .TextBoxColors {
+        width: 100%;
+    }
+
+    .TextAndBoxContainer {
+        flex-direction: column;
+    }
+}
+
+
+
+/* schmukfarben */
+
+
+.Schmuckfarbencontainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Schmuckfarben {
+    width: 30%;
+    border-radius: 25px;
+    padding: 50px;
+    margin: 10px;
+    display: flex;
+    position: relative; 
+}
+
+
+.schmukfarbenTop {
+    width: inherit;
+    position: absolute;
+    background-color: aqua;
+    height: 50%;
+    border-radius: 25px 0;
+}
+
+@media (max-width: 1350px ) {
+    .Schmuckfarben {
+    width: 45%;
+        
+    }
+}
+@media (max-width: 799px ) {
+
+
+    .Schmuckfarben {
+    width: 100%;
+        
+    }
 }
