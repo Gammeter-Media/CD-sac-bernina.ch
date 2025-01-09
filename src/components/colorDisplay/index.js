@@ -1,17 +1,24 @@
 import React from 'react';
 
 // Primary component
-const ColorBoxes = ({ hex, className, pantone}) => {
+const ColorBoxes = ({ web, className, RGB,  pantone, cmyk}) => {
     return (
     <div className={className}>
-        <span>{pantone}</span>
-        <span>{hex}</span>       
+        <span>pantone:{pantone}</span>
+        <span>cmyk:{cmyk}</span>       
+        <span>web:{web}</span>       
+        <span>rgb:{RGB}</span>       
         
-        <div style={{ backgroundColor: hex, width: "100%", height: "100%" }}>
+        <div style={{ backgroundColor: web, width: "100%", height: "100%" }}>
         </div>
     </div>
 
     )};
+
+
+
+
+    
 
 // ColorContainer component
 const addClass = ({ className, children }) => {
