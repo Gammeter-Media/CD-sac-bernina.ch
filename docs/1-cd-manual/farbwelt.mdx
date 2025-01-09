@@ -2,19 +2,31 @@
 sidebar_position: 2
 ---
 
-import Primary from '@site/src/components/colorDisplay';
+import {ColorBoxes, addClass} from '@site/src/components/colorDisplay';
 import styles from '@site/src/components/HomepageFeatures/styles.module.css';
 
 
 
 
 # Farbwelt
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
 
-# Example in MDX
 
-<Primary color="#e30613" className={styles.ColorDisplay}>Hello</Primary>
+# Die Logo- und Designfarben
+<addClass className={styles.TextAndBoxContainer}>
+    <addClass className={styles.TextBoxColors}>
+        Die Logofarben des SAC sind Rot, Schwarz, Weiss und Grau. Diese  arben werden sowohl in der Typo-grafie als auch für grafische Elemente verwendet; das Rot hautpsächlich für Aus-zeichnungen, das chwarz hauptsächlich für Titel und Fliesstext.
+    </addClass>
+    <addClass className={styles.PrimaryClores}>
+        <ColorBoxes hex="#e30613" pantone= "Red032" className={styles.Logofarben} ></ColorBoxes>
+        <ColorBoxes hex="#000000" className={styles.Logofarben} ></ColorBoxes>
+        <ColorBoxes hex="#878787" className={styles.Logofarben} ></ColorBoxes>
+        <ColorBoxes hex="#d0d0d0" className={styles.Logofarben} ></ColorBoxes>
+    </addClass>
+</addClass>
+
+
+
 
 
 ## Designfarben
