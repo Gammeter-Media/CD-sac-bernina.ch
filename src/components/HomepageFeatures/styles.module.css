@@ -10,3 +10,51 @@
     width: 200px;
 }
 
+.Logofarben {
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 500px;
+}
+
+.Logofarben span {
+
+    font-size: small;
+    font-weight: 200;
+
+}
+
+
+.PrimaryClores {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 75%;
+    
+}
+
+.TextAndBoxContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.TextBoxColors {
+    width: 25%;
+}
+
+@media (max-width: 1350px ) {
+
+
+    .PrimaryClores {
+        width: 100%;
+    }
+
+    .TextBoxColors {
+        width: 100%;
+    }
+
+    .TextAndBoxContainer {
+        flex-direction: column;
+    }
+}
