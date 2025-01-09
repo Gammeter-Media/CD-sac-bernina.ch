@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-import {ColorBoxes, addClass, Schmuckfarben} from '@site/src/components/colorDisplay';
+import {ColorBoxes, AddClass, Schmuckfarben} from '@site/src/components/colorDisplay';
 import styles from '@site/src/components/HomepageFeatures/styles.module.css';
 
 
@@ -14,35 +14,33 @@ import styles from '@site/src/components/HomepageFeatures/styles.module.css';
 
 
 # Die Logo- und Designfarben
-<addClass className={styles.TextAndBoxContainer}>
-    <addClass className={styles.TextBoxColors}>
         Die Logofarben des SAC sind Rot, Schwarz, Weiss und Grau. Diese  arben werden sowohl in der Typo-grafie als auch für grafische Elemente verwendet; das Rot hautpsächlich für Aus-zeichnungen, das chwarz hauptsächlich für Titel und Fliesstext.
-    </addClass>
-    <addClass className={styles.PrimaryClores}>
-        <ColorBoxes pantone= "Red032" cmyk= "0|100|100| 0"  web="#e30613" RGB= "227|6|19" ></ColorBoxes>
-        <ColorBoxes pantone= "Black" cmyk= "0|0|0| 100"  web="#000000" RGB= "0|0|0"></ColorBoxes>
-        <ColorBoxes pantone = "cool Gray 8c" cmyk = "0|0|0|60"  web="#878787" RGB = "135|135|135"></ColorBoxes>
-        <ColorBoxes pantone = "Cool gray 4 C" cmyk= "0|0|0|208" web="#d0d0d0" RGB= "208|208|208" ></ColorBoxes>
-    </addClass>
+<addClass className={styles.primaryClores}>
+    <ColorBoxes pantone= "Red032" cmyk= "0|100|100| 0"  web="#e30613" RGB= "227|6|19" ></ColorBoxes>
+    <ColorBoxes pantone= "Black" cmyk= "0|0|0| 100"  web="#000000" RGB= "0|0|0"></ColorBoxes>
+    <ColorBoxes pantone = "cool Gray 8c" cmyk = "0|0|0|60"  web="#878787" RGB = "135|135|135"></ColorBoxes>
+    <ColorBoxes pantone = "Cool gray 4 C" cmyk= "0|0|0|208" web="#d0d0d0" RGB= "208|208|208" ></ColorBoxes>
 </addClass>
 
 
 
 
 
-## Die Schmuckfarben
+
+## Die schmuckfarben
 Die erweiterte Farb palette besteht aus 8 Farben in jeweils zwei Abstufungen. Die helle Variante beträgt 50 % der CMYK-Werte.
-<addClass className={styles.Schmuckfarbencontainer}>
-    <Schmuckfarben   color="rgb(255, 255, 150)"></Schmuckfarben>
-    <Schmuckfarben  color="rgb(255, 255, 150)"></Schmuckfarben>
-    <Schmuckfarben  color="rgb(255, 255, 150)"></Schmuckfarben>
-    <Schmuckfarben  color="rgb(255, 255, 150)"></Schmuckfarben>
-    <Schmuckfarben  color="rgb(255, 255, 150)"></Schmuckfarben>
-    <Schmuckfarben  color="rgb(255, 255, 150)"></Schmuckfarben>
-    <Schmuckfarben  color="rgb(255, 255, 150)"></Schmuckfarben>
-    <Schmuckfarben  color="rgb(255, 255, 150)"></Schmuckfarben>
-    <Schmuckfarben  color="rgb(255, 255, 150)"></Schmuckfarben>
+
+
+<addClass className={styles.schmuckfarbencontainer}>
+    <Schmuckfarben Primary="rgb(255, 195, 0)" primarycmyk="0|25|100|0" secondary ="rgb(255, 255, 150)" secondarycmyk="0|12|50|0" />
+    <Schmuckfarben Primary="rgb(150, 195, 30)" primarycmyk="50|0|50|0" secondary ="rgb(207, 255, 155)" secondarycmyk="25|0|50|0" />
+    <Schmuckfarben Primary="rgb(0, 185, 147)" primarycmyk="100|25|100|0" secondary ="rgb(144, 185, 147)" secondarycmyk="50|12|50|0" />
+    <Schmuckfarben Primary="rgb(0, 160, 227)" primarycmyk="100|0|0|0" secondary ="rgb(131, 208, 245)" secondarycmyk="50|12|50|0" />
+    <Schmuckfarben Primary="rgb(22, 65, 148)" primarycmyk="100|80|0|0" secondary ="rgb(22, 65, 148)" secondarycmyk="50|40|0|0" />
+    <!-- Wrong RGB on the CD PDF -->
+    <Schmuckfarben Primary="rgb(130,30,130)" primarycmyk="60|100|0|0" secondary ="rgb(188,144 ,193)" secondarycmyk="30|50|0|0" />
+    <Schmuckfarben Primary="rgb(232,48,138)" primarycmyk="0|90|0|0" secondary ="rgb(245,170,205)" secondarycmyk="0|45|0|0"/>
+    <Schmuckfarben Primary="rgb(240,125,0)" primarycmyk="0|60|100|0" secondary ="rgb(250,193,138)" secondarycmyk="0|30|50| 0"/>
+
 </addClass>
-
-
 
