@@ -25,9 +25,9 @@ const AddClass = ({ className }) => {
     );
 };
 
-const Schmuckfarben = ({ Primary, primarycmyk, secondary, secondarycmyk }) => {
+const Schmuckfarben = ({ Primary, primarycmyk, secondary, secondarycmyk, text }) => {
     return (
-        <div className="schmuckfarben" style={{ backgroundColor: Primary }}>
+        <div className="schmuckfarben" style={{ backgroundColor: Primary, }}>
             <div className="schmukfarbenTop" style={{ backgroundColor: secondary }}>
                 <div>
                     <span>CMYK: {secondarycmyk}</span>
@@ -35,8 +35,8 @@ const Schmuckfarben = ({ Primary, primarycmyk, secondary, secondarycmyk }) => {
                 </div>
             </div>
             <div>
-                <span>CMYK: {primarycmyk}</span>
-                <span>RGB: {Primary}</span>
+                <span style={{ color: text}}>CMYK: {primarycmyk}</span>
+                <span style={{ color: text}}>RGB: {Primary}</span>
             </div>
         </div>
     );
