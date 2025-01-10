@@ -5,14 +5,14 @@ import '@site/src/css/Farbwelt.css';
 
 
 // Primary component
-const ColorBoxes = ({ web, RGB, pantone, cmyk , textcolor}) => {
+const ColorBoxes = ({ web, rgb, pantone, cmyk , textcolor}) => {
     return (
         <div className="logofarben">        
             <div style={{ backgroundColor: web, width: "100%", height: "100%",  color: textcolor}}>
-                <span>pantone: {pantone}</span>
-                <span>cmyk: {cmyk}</span>
-                <span>web: {web}</span>
-                <span>rgb: {RGB}</span>
+                <span>Pantone: {pantone}</span>
+                <span>CMYK: {cmyk}</span>
+                <span>Web: {web}</span>
+                <span>RGB: {rgb}</span>
             </div>
         </div>
     )
@@ -25,9 +25,9 @@ const AddClass = ({ className }) => {
     );
 };
 
-const Schmuckfarben = ({ Primary, primarycmyk, secondary, secondarycmyk, text }) => {
+const Schmuckfarben = ({ primary, primarycmyk, secondary, secondarycmyk, text }) => {
     return (
-        <div className="schmuckfarben" style={{ backgroundColor: Primary, }}>
+        <div className="schmuckfarben" style={{ backgroundColor: primary, }}>
             <div className="schmukfarbenTop" style={{ backgroundColor: secondary }}>
                 <div>
                     <span>CMYK: {secondarycmyk}</span>
@@ -36,7 +36,7 @@ const Schmuckfarben = ({ Primary, primarycmyk, secondary, secondarycmyk, text })
             </div>
             <div>
                 <span style={{ color: text}}>CMYK: {primarycmyk}</span>
-                <span style={{ color: text}}>RGB: {Primary}</span>
+                <span style={{ color: text}}>RGB: {primary}</span>
             </div>
         </div>
     );
