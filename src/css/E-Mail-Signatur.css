@@ -21,10 +21,6 @@
     width: 85%;
 }
 
-.signatur  pre{
-
-    
-}
 .codeContainer {
     position: relative;
     width: 85%;
@@ -34,15 +30,30 @@
 
 .signatur button {
     position: absolute;
-    right: 0;
-    top: 0;
-    border: 1px solid black;
+    right: 10px;
+    top: 10px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    background-color: transparent;
     border-radius: 5px;
 
 }
+.signatur button svg{
+    height: 20px;
+    width: 15px;
+    color: rgba(128, 128, 128, 0.5);
+}
+
+.signatur button:hover svg{
+    color: black;
+}
 
 .signatur button:hover {
-    border: 1px solid red;
-   
+    border: 1px solid black;
+
 
 }

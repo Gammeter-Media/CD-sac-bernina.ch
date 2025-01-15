@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import '@site/src/css/E-Mail-Signatur.css';
 
-const Signatur = ({ Vorname = 'Vorname', Name = 'Name', Funktion = 'Funktion', EMail = 'info@sac-bernina.ch' }) => {
+const Signatur = ({ Vorname = 'Vorname', Name = 'Name', Funktion = 'Funktion', Email = 'info@sac-bernina.ch' }) => {
     // State to manage form inputs
     const [formValues, setFormValues] = useState({
         vorname: Vorname,
         name: Name,
         funktion: Funktion,
-        email: EMail,
+        email: Email,
     });
 
     const handleChange = (e) => {
@@ -18,21 +18,35 @@ const Signatur = ({ Vorname = 'Vorname', Name = 'Name', Funktion = 'Funktion', E
         }));
     };
 
+    const [svg, setSvg] = useState( <svg viewBox="0 0 20 20" width="15" height="15"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V15H4V3H16V1Z"></path></svg>)
+
+
+
+
     // copy button 
     const copyToClipboard = () => {
         navigator.clipboard.writeText(code)
+        const _svg = svg;
+        setSvg(<svg viewBox="0 0 20 20" width="15" height="15"><path fill="green" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg>)
+        
+        setTimeout(()=>{
+            setSvg(_svg)
+            console.log('waiting')
+        }, 1000)
+                
       };
+
+
     
 
     
 
     let code = `<p><b>` + formValues.vorname +` ` + formValues.name +`</b><br />
 `+ formValues.funktion + `</p>
-<p><b>Schweizer Alpen-Club SAC | Sektion Bernina</b>
+<p><b>Schweizer Alpen-Club SAC | Sektion Bernina</b><br />
 <a href="` + formValues.email +`">` + formValues.email  +`</a> | <a href="https://www.sac-bernina.ch">sac-bernina.ch</a></p>`
 
 
-    console.log({code});
     return (
         <div className="signatur">
             <input type="text" name="vorname" placeholder="Vorname" value={formValues.vorname} onChange={handleChange}/>
@@ -42,11 +56,8 @@ const Signatur = ({ Vorname = 'Vorname', Name = 'Name', Funktion = 'Funktion', E
 
             <div className= "codeContainer">
                 <pre>
-
-                    <button onClick={copyToClipboard}>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-copy" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-                        </svg>
+                    <button onClick={copyToClipboard}  >
+                        {svg}
                     </button>
 
                     <code>
