@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '@site/src/css/E-Mail-Signatur.css';
 
-const Signatur = ({ Vorname = '', Name = '', Funktion = '', EMail = '' }) => {
+const Signatur = ({ Vorname = 'Vorname', Name = 'Name', Funktion = 'Funktion', EMail = 'info@sac-bernina.ch' }) => {
     // State to manage form inputs
     const [formValues, setFormValues] = useState({
         vorname: Vorname,
@@ -19,6 +19,7 @@ const Signatur = ({ Vorname = '', Name = '', Funktion = '', EMail = '' }) => {
     };
 
 
+
     let test = `<p><b>` + formValues.vorname +` ` + formValues.name +`/b>
 `+ formValues.funktion + `</p>
 <p><b>Schweizer Alpen-Club SAC | Sektion Bernina</b>
@@ -26,7 +27,7 @@ const Signatur = ({ Vorname = '', Name = '', Funktion = '', EMail = '' }) => {
 
     return (
         <div className="signatur">
-            <input type="text" id="hello" name="vorname" placeholder="Vorname" value={formValues.vorname} onChange={handleChange}/>
+            <input type="text" name="vorname" placeholder="Vorname" value={formValues.vorname} onChange={handleChange}/>
             <input type="text" name="name" placeholder="Name" value={formValues.name} onChange={handleChange}/>
             <input type="text" name="funktion" placeholder="Funktion" value={formValues.funktion} onChange={handleChange}/>
             <input type="email" name="email" placeholder="E-Mail"value={formValues.email} onChange={handleChange}/>     
