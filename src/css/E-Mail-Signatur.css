@@ -1,0 +1,59 @@
+.signatur {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.signatur  input{
+    padding: 10px;
+    width: 35%;
+    border: none;
+    border-bottom: 2px solid;
+    margin-top: 10px;
+}
+.signatur  input:focus {
+    border-bottom: 2px solid rgb(227, 6, 19) ;    
+    outline: none;
+}
+
+
+.signatur  input:nth-last-of-type(2), .signatur  input:nth-last-of-type(1){
+    width: 85%;
+}
+
+.codeContainer {
+    position: relative;
+    width: 85%;
+    margin-top: 20px;
+}
+
+
+.signatur button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    background-color: transparent;
+    border-radius: 5px;
+
+}
+.signatur button svg{
+    height: 20px;
+    width: 15px;
+    color: rgba(128, 128, 128, 0.5);
+}
+
+.signatur button:hover svg{
+    color: black;
+}
+
+.signatur button:hover {
+    border: 1px solid black;
+
+
+}
