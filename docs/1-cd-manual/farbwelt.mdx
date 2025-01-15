@@ -1,14 +1,11 @@
 ---
 sidebar_position: 2
 ---
-import {ColorBoxes, AddClass, Schmuckfarben} from '@site/src/components/colorDisplay';
+import {ColorBoxes, AddClass, Schmuckfarben, Webfarben} from '@site/src/components/colorDisplay';
 
 # Farbwelt
+Die Farbwelt des SAC ist ein wesentlicher Bestandteil des Corporate Designs. Sie umfasst die Hauptfarben, die in Logos und Designelementen verwendet werden, sowie eine Palette von Sekundärfarben, die für spezifische Anwendungen wie Icons, Buttons und Labels vorgesehen sind. 
 
-## @TODO
-- [ ] Farbwerte der Schmuckfarben stimmen in der Vorlage nicht überein.
-
----
 
 # Die Logo- und Designfarben
 Die Logofarben des SAC sind Rot, Schwarz, Weiss und Grau. Diese Farben werden sowohl in der Typografie als auch für grafische Elemente verwendet; das Rot hautpsächlich für Auszeichnungen, das Schwarz hauptsächlich für Titel und Fliesstext.
@@ -20,6 +17,21 @@ Die Logofarben des SAC sind Rot, Schwarz, Weiss und Grau. Diese Farben werden so
 </addClass>
 
 
+## Sekundärfarben
+Sekundärfarben für Icons, Buttons, Labels oder Hinweise. Primär für den Gebrauch im Web. Die Farbwerte stammen aus der Website www.sac-cas.ch (Stand Januar 2025) [^1]
+<addClass className="schmuckfarbencontainer">
+    <Webfarben primary="rgb(132, 190, 65)"   primaryhex="#84be41"  />
+    <Webfarben primary="rgb(35, 113, 0)"  primaryhex="#237100" text="#fff"/>
+    <Webfarben primary="rgb(0, 138, 121)"  primaryhex="#008a79" text="#fff"/>
+    <Webfarben primary="rgb(0, 163, 218)" primaryhex="#00a3da"/>
+    <Webfarben primary="rgb(0,51,255)" primaryhex="#0033ff" text="#fff"/>
+    <Webfarben primary="rgb(102, 45, 145)"  primaryhex="#662d91" text="#fff"/>
+    <Webfarben primary="rgb(255, 187, 0)"  primaryhex="#ffbb00" />
+    <Webfarben primary="rgb(255, 61, 18)"  primaryhex="#ff3d12" text="#fff"/>
+    <Webfarben primary="rgb(227, 6, 19)"     primaryhex="#e30613" secondary="rgb(176, 5, 17)"     secondaryhex="#b00511"      text="#fff"/>
+</addClass>
+
+<!---
 ## Die Schmuckfarben
 Die erweiterte Farbpalette besteht aus 8 Farben in jeweils zwei Abstufungen. Die helle Variante beträgt 50 % der CMYK-Werte.
 <addClass className="schmuckfarbencontainer">
@@ -32,3 +44,8 @@ Die erweiterte Farbpalette besteht aus 8 Farben in jeweils zwei Abstufungen. Die
     <Schmuckfarben primary="rgb(232, 48, 138)"  primarycmyk="0 | 90 | 0 | 0"        secondary ="rgb(245, 170, 205)"     secondarycmyk="0 | 45 | 0 | 0"/>
     <Schmuckfarben primary="rgb(130, 30, 130)"  primarycmyk="60 | 100 | 0 | 0"      secondary ="rgb(188, 144, 193)"     secondarycmyk="30 | 50 | 0 | 0"     text="#fff"/>
 </addClass>
+-->
+
+
+---
+[^1]: *Die Farbwerte "Schmuckfarben" aus dem "Corporate Design Manual für die SAC-Sektionen" stimmen nicht überein (Inkonsitenzen zwischen CMYK und RGB) sowie sind nicht bei der aktuellen SAC-Website nicht im Einsatz. Darum wird der Absatz "Schmuckfarben" hier nicht aufgeführt.*

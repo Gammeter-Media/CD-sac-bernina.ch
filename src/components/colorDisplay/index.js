@@ -25,6 +25,7 @@ const AddClass = ({ className }) => {
     );
 };
 
+// Schmuckfarben
 const Schmuckfarben = ({ primary, primarycmyk, secondary, secondarycmyk, text }) => {
     return (
         <div className="schmuckfarben" style={{ backgroundColor: primary, }}>
@@ -42,7 +43,26 @@ const Schmuckfarben = ({ primary, primarycmyk, secondary, secondarycmyk, text })
     );
 };
 
-export { ColorBoxes, AddClass, Schmuckfarben };
+
+// Webfarben
+const Webfarben = ({ primary, primaryhex, secondary=null, secondaryhex, text }) => {
+    return (
+        <div className="schmuckfarben" style={{ backgroundColor: primary }}>
+            <div className="schmukfarbenTop" style={{ backgroundColor: secondary, display: secondary ? 'block' : 'none' }}>
+                <div>
+                    <span>Web: {secondaryhex}</span>
+                    <span>RGB: {secondary}</span>
+                </div>
+            </div>
+            <div>
+                <span style={{ color: text }}>Web: {primaryhex}</span>
+                <span style={{ color: text }}>RGB: {primary}</span>
+            </div>
+        </div>
+    );
+};
+
+export { ColorBoxes, AddClass, Schmuckfarben, Webfarben };
 export default Schmuckfarben;
 
 
