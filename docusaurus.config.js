@@ -76,7 +76,7 @@ const config = {
             type: "docSidebar",
             sidebarId: "tutorialSidebar",
             position: "left",
-            label: "Corporate Design",
+            label: "Corporate Design Manual",
           },
           // {to: '/blog', label: 'Blog', position: 'left'},
           // {
