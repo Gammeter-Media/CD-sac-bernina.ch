@@ -129,7 +129,7 @@ const config = {
         //     ],
         //   },
         // ],
-        copyright: `Copyright © ${new Date().getFullYear()} SAC Bernina & Gammeter Media AG`,
+        copyright: `© ${new Date().getFullYear()} <a href="https://www.sac-bernina.ch" target="_blank">«Sektion Bernina, Schweizer Alpen-Club SAC»</a> in Zusammenarbeit mit <a href="https://www.gammetermedia.ch" target="_blank">«Gammeter Media»</a>`,
       },
       prism: {
             theme: prismThemes.github,

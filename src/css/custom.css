@@ -34,3 +34,7 @@
 .navbar__brand:hover {
   color: var(--ifm-navbar-link-color);
 }
+
+.footer a {
+  color: var(--ifm-footer-link-color)
+}
