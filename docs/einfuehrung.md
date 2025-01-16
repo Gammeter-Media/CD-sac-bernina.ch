@@ -22,4 +22,4 @@ Anweisungen für [Social-Media](/category/social-media) und [il Bernina](/catego
 
 | Datum      | Bemerkungen      |
 |------------|------------------|
-| 01.01.2024 | Initiale Version |
+| 15.01.2025 | Initiale Version |
