@@ -22,7 +22,6 @@ const Signatur = ({ Vorname = 'Vorname', Name = 'Name', Funktion = 'Funktion', E
 
 
 
-
     // copy button 
     const copyToClipboard = () => {
         navigator.clipboard.writeText(code)
@@ -33,17 +32,12 @@ const Signatur = ({ Vorname = 'Vorname', Name = 'Name', Funktion = 'Funktion', E
             setSvg(_svg)
             console.log('waiting')
         }, 1000)
-                
-      };
+    };
 
 
-    
-
-    
-
-    let code = `<p><b>` + formValues.vorname +` ` + formValues.name +`</b><br />
+    let code = `<p><b>` + formValues.vorname +` ` + formValues.name +`</b><br/>
 `+ formValues.funktion + `</p>
-<p><b>Schweizer Alpen-Club SAC | Sektion Bernina</b><br />
+<p><b>Sektion Bernina, Schweizer Alpen-Club SAC</b><br/>
 <a href="` + formValues.email +`">` + formValues.email  +`</a> | <a href="https://www.sac-bernina.ch">sac-bernina.ch</a></p>`
 
 
@@ -62,17 +56,11 @@ const Signatur = ({ Vorname = 'Vorname', Name = 'Name', Funktion = 'Funktion', E
 
                     <code>
                         {code}
-                        
                     </code>
                 </pre>
             </div>
         </div>
-        
-
-        
     );
-
-
 };
 
 
