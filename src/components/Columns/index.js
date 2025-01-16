@@ -8,7 +8,8 @@ import clsx from 'clsx';
 export default function Columns({ children , className , style }) {
   return (
     // This section encompasses the columns that we will integrate with children from a dedicated component to allow the addition of columns as needed 
-    <div className="container center">
+    // removed class names: container center
+    <div className=""> 
           <div className={clsx('row', className)} style={style}>
             {children}    
         </div>
