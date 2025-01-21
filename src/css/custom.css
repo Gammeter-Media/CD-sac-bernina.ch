@@ -29,6 +29,9 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+.background--dark {
+    background-color: rgba(0, 0, 0, 0.9);
+}
 
 
 .navbar__brand:hover {
